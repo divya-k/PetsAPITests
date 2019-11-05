@@ -16,7 +16,7 @@ Steps to execute the project:
  mvn clean install (to download maven dependencies and clean the target)
  mvn  test - to run test scripts for below
  
-Test Scenarioes:
+Test Scenarios:
 @API_Test is to authorize ,create and get pet
 
 
