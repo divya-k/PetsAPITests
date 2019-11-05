@@ -6,7 +6,6 @@ import cucumber.api.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import utilities.Utils;
 import static io.restassured.RestAssured.given;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class PetStepDefinition extends Utils {
+public class PetStepDefinition  {
 
 	String accesstoken;
 	Response createPetResponse;
@@ -42,9 +41,8 @@ public class PetStepDefinition extends Utils {
 		accesstoken=code;
     }
 
-    @When("^we create a pet with id (\\d+) name \"([^\"]*)\" photoUrl \"([^\"]*)\" and status \"([^\"]*)\"$")
-  
-    	 public void createPet(int id,String name,String photoUrl,String status) { 
+    @When("^we create a pet with id (\\d+) name \"([^\"]*)\" photoUrl \"([^\"]*)\" and status \"([^\"]*)\"$") 
+    public void createPet(int id,String name,String photoUrl,String status) { 
     
     		createPetResponse = given().
 				 				contentType("application/json").

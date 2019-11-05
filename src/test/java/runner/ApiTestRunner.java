@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
         features = "src/test/resources/features",
         glue = {"steps"},
         tags = {
-                "@API_Test, @API_Test1"
+                "@API_Test"
 
         })
 @Test
