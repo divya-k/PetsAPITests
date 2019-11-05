@@ -6,7 +6,7 @@ Scenario Outline: To authorize ,create and get pet
     Given Authorize oAuth with scope of read pets and write pets to receive the access token
     When we create a pet with id <id> name "<name>" photoUrl "<photoUrl>" and status "<status>"
   	And the pet should be created successfully with id <id> name "<name>" photoUrl "<photoUrl>" and status "<status>"
-  	And when we get the pet with id <id>
+  	And we get the pet with id <id>
    	Then the pet details should be correct with id <id> name "<name>" photoUrl "<photoUrl>" and status "<status>"
   	
     Examples:

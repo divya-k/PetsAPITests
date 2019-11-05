@@ -87,7 +87,7 @@ public class PetStepDefinition  {
     }
     
     
-    @When("^when we get the pet with id (\\d+)$")
+    @When("^we get the pet with id (\\d+)$")
     public void when_we_get_the_pet_with_id(int id)  {
     	 getPetResponse= given().
 					contentType("application/json").
